@@ -25,7 +25,8 @@ public class Artist : MonoBehaviour
     {
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
-        NPCArtistStats.Hope = 50;
+        NPCArtistStats.Hope = 35;
+        PlayerStats.Hope = 100;
         talkPanel.SetActive(false);
     }
 
@@ -46,7 +47,7 @@ public class Artist : MonoBehaviour
 
     //changes the text based on the day 
     public void dayNumber() {
-        dialogue.dayDialogue(day);
+        dialogue.dayDialogue(NPCArtistStats.Hope);
     }
 
     public void talk() {
@@ -58,23 +59,70 @@ public class Artist : MonoBehaviour
         talkPanel.SetActive(true);
     }
 
-    public void agree() { 
-        if (badChoice)
-        {
-            NPCArtistStats.Hope -= 10;
-        }
-        else if (!badChoice) {
-            NPCArtistStats.Hope += 10;
+    public void agree() {
+
+        switch (NPCArtistStats.Hope) {
+            case 10:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 20:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 30:
+                NPCArtistStats.Hope += 40;
+                break;
+            case 40:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 50:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 60:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 70:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 80:
+                NPCArtistStats.Hope -= 40;
+                break;
+            default:
+                NPCArtistStats.Hope += 35;
+                break;
         }
     }
 
     public void disagree() {
-        if (!badChoice)
+
+        switch (NPCArtistStats.Hope)
         {
-            NPCArtistStats.Hope -= 10;
-        }
-        else if (badChoice) {
-            NPCArtistStats.Hope += 10;
+            case 10:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 20:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 30:
+                NPCArtistStats.Hope -= 40;
+                break;
+            case 40:
+                NPCArtistStats.Hope += 10;
+                break;
+            case 50:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 60:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 70:
+                NPCArtistStats.Hope -= 10;
+                break;
+            case 80:
+                NPCArtistStats.Hope += 40;
+                break;
+            default:
+                NPCArtistStats.Hope -= 15;
+                break;
         }
     }
 
