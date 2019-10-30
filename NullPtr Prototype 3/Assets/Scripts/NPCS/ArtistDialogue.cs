@@ -14,8 +14,6 @@ public class ArtistDialogue : MonoBehaviour
     public void Start()
     {
         scrambler = this.GetComponent<TextScrambler>();
-        //scrambler.StringBuffer = "IDK";
-        //scrambler.forceUpdate = true;
     }
 
     //TODO: Add in the dialogue
@@ -30,23 +28,33 @@ public class ArtistDialogue : MonoBehaviour
                 break;
             //day 2
             case 2:
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             //day 3
             case 3:
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             //day 4
             case 4:
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             //day 5
             case 5:
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             //day 6
             case 6:
-    
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             //day 7
             case 7:
- 
+                scrambler.StringBuffer = "Hello there";
+                scrambler.forceUpdate = true;
                 break;
             default:
    

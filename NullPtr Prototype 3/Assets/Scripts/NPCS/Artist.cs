@@ -25,7 +25,8 @@ public class Artist : MonoBehaviour
     {
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
-        NPCArtistStats.Hope = 100;
+        NPCArtistStats.Hope = 50;
+        talkPanel.SetActive(false);
     }
 
     void Update()
@@ -57,8 +58,7 @@ public class Artist : MonoBehaviour
         talkPanel.SetActive(true);
     }
 
-    public void agree() {
-        Debug.Log("Agree");
+    public void agree() { 
         if (badChoice)
         {
             NPCArtistStats.Hope -= 10;
@@ -69,8 +69,6 @@ public class Artist : MonoBehaviour
     }
 
     public void disagree() {
-        Debug.Log("Disagree");
-
         if (!badChoice)
         {
             NPCArtistStats.Hope -= 10;
@@ -97,6 +95,5 @@ public class Artist : MonoBehaviour
             talkPanel.SetActive(false);
         }
     }
-
 
 }
