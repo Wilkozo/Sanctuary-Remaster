@@ -14,14 +14,20 @@ public class ArtistDialogue : MonoBehaviour
     public void Start()
     {
         scrambler = this.GetComponent<TextScrambler>();
+        scrambler.StringBuffer = "Man, I don't understand this at all. I spend all my time staring at this paper and it all looks ... jumbled? Does that make any sense?";
+        scrambler.forceUpdate = true;
     }
 
     //TODO: Add in the dialogue
-    public void dayDialogue(int day)
+    public void dayDialogue()
     {
 
         switch (NPCArtistStats.Hope)
         {
+            case 0:
+                scrambler.StringBuffer = "I'm Dead go away";
+                scrambler.forceUpdate = true;
+                break;
             case 10:
                 scrambler.StringBuffer = "I must be cursed or something, my parents will never love me. I'm just so pointless. I'm gonna end it all";
                 scrambler.forceUpdate = true;
@@ -54,9 +60,13 @@ public class ArtistDialogue : MonoBehaviour
                 scrambler.StringBuffer = "I've got to thank you for boosting my confidence, but... do you think I'm ... good enough. I've been giving it my all but what if I'm not good enough?";
                 scrambler.forceUpdate = true;
                 break;
-            default:
-                scrambler.StringBuffer = "Man, I don't understand this at all. I spend all my time staring at this paper and it all looks ... jumbled? Does that make any sense?";
+            case 90:
+                scrambler.StringBuffer = "Wow they accepted me!. I'm getting my manga published next month. It's a dream come true";
                 scrambler.forceUpdate = true;
+                break;
+                //do nothing
+            default:
+ 
                 break;
 
         }

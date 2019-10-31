@@ -47,16 +47,18 @@ public class Artist : MonoBehaviour
 
     //changes the text based on the day 
     public void dayNumber() {
-        dialogue.dayDialogue(NPCArtistStats.Hope);
+        dialogue.dayDialogue();
     }
 
     public void talk() {
 
         //plays audio
         FindObjectOfType<AudioManager>().Play("Click");
-        dayNumber();
         //enable the buttons and text
         talkPanel.SetActive(true);
+        dialogue.dayDialogue();
+        //dayNumber();
+   
     }
 
     public void agree() {
@@ -118,7 +120,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope -= 10;
                 break;
             case 80:
-                NPCArtistStats.Hope += 40;
+                NPCArtistStats.Hope += 10;
                 break;
             default:
                 NPCArtistStats.Hope -= 15;
