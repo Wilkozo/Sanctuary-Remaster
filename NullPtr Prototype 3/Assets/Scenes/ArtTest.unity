@@ -278,13 +278,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185729991}
-  m_LocalRotation: {x: -0.9122089, y: 0.08510822, z: -0.24442565, w: -0.3176281}
+  m_LocalRotation: {x: -0.9086306, y: 0.08781345, z: -0.24346687, w: -0.32772416}
   m_LocalPosition: {x: -1209, y: 1373, z: -263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -218.396, y: -30, z: -0.000015258789}
+  m_LocalEulerAnglesHint: {x: -219.667, y: -30, z: -0.000015258789}
 --- !u!1001 &744763187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -296,6 +296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Building1_LOW
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8c0e15a3c8ddcd94696081369eebf8af,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8c0e15a3c8ddcd94696081369eebf8af,
         type: 3}
@@ -459,7 +464,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.13705947, g: 0.28920928, b: 0.5283019, a: 0}
+  m_BackGroundColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 0}
   m_projectionMatrixMode: 2
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -499,10 +504,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062984766}
-  m_LocalRotation: {x: 0.015625319, y: -0.9504143, z: 0.19340847, w: 0.2430259}
-  m_LocalPosition: {x: 98, y: 909, z: 1047}
+  m_LocalRotation: {x: 0.052226793, y: -0.9269771, z: 0.18023725, w: 0.32480827}
+  m_LocalPosition: {x: 567, y: 1117, z: 1184}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 22.039001, y: -150.53801, z: 3.9780002}
+  m_LocalEulerAnglesHint: {x: 21.597, y: -141.141, z: 1.248}
