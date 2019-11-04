@@ -278,7 +278,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: dc528584f2daa5b41a40d13e2c7deade,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5810
+      value: -8623
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dc528584f2daa5b41a40d13e2c7deade,
         type: 3}
@@ -288,7 +288,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: dc528584f2daa5b41a40d13e2c7deade,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 611
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: dc528584f2daa5b41a40d13e2c7deade,
         type: 3}
@@ -677,7 +677,7 @@ Camera:
   m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 25
+  m_FocalLength: 13
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -685,8 +685,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 3112.9
-  field of view: 51.28201
+  far clip plane: 100000
+  field of view: 85.418785
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -711,10 +711,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062984766}
-  m_LocalRotation: {x: 0.052226793, y: -0.9269771, z: 0.18023725, w: 0.32480827}
-  m_LocalPosition: {x: 567, y: 1117, z: 1184}
+  m_LocalRotation: {x: 0.016196625, y: -0.9663061, z: 0.19793555, w: 0.16374299}
+  m_LocalPosition: {x: -8112, y: 2140, z: 1788}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 21.597, y: -141.141, z: 1.248}
+  m_LocalEulerAnglesHint: {x: 22.820002, y: -160.34401, z: 2.084}
