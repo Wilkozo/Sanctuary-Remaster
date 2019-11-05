@@ -58,7 +58,6 @@ public class Artist : MonoBehaviour
         talkPanel.SetActive(true);
 
         dialogue.dayDialogue();
-        //dayNumber();
    
     }
 
@@ -93,6 +92,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope += 35;
                 break;
         }
+        GlobalData.TimeOfDay += 1;
         talkPanel.SetActive(false);
     }
 
@@ -128,6 +128,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope -= 15;
                 break;
         }
+         GlobalData.TimeOfDay += 1;
         talkPanel.SetActive(false);
     }
 
