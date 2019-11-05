@@ -10,6 +10,7 @@ public static class GlobalData
     private static string lastScene = "HomeExt";
     private static bool dreamDefeated = false;
     private static int dayCount;
+    private static bool TalkedToArtist = false;
 
     
     public static int TimeOfDay
@@ -22,6 +23,18 @@ public static class GlobalData
         {
             timePoint = value;
         }
+    }
+
+    public static bool talkedToArtist {
+        get
+        {
+            return TalkedToArtist;
+        }
+        set
+        {
+            TalkedToArtist = value;
+        }
+
     }
 
     public static float StartPos 

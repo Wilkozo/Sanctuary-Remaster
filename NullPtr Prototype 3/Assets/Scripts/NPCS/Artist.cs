@@ -93,6 +93,7 @@ public class Artist : MonoBehaviour
                 break;
         }
         GlobalData.TimeOfDay += 1;
+        GlobalData.talkedToArtist = true;
         talkPanel.SetActive(false);
     }
 
@@ -129,6 +130,7 @@ public class Artist : MonoBehaviour
                 break;
         }
          GlobalData.TimeOfDay += 1;
+        GlobalData.talkedToArtist = true;
         talkPanel.SetActive(false);
     }
 
@@ -136,7 +138,7 @@ public class Artist : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Player") {
             inRange = true;
-            if (playerSpriteIsActive) {
+            if (playerSpriteIsActive && GlobalData.talkedToArtist == false) {
                 talkButton.SetActive(true);        
             }
         }
@@ -155,7 +157,7 @@ public class Artist : MonoBehaviour
         if (collision.tag == "Player")
         {
             inRange = true;
-            if (playerSpriteIsActive)
+            if (playerSpriteIsActive && GlobalData.talkedToArtist == false)
             {
                 talkButton.SetActive(true);
             }
