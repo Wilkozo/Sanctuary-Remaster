@@ -28,6 +28,7 @@ public class PlayerTarget : MonoBehaviour {
     {
         var pos = transform.position.x;
         pos = GlobalData.StartPos;
+
         TargetPos.x = FindObjectOfType<PlayerMove>().iniPos.x;
 	}
 	
