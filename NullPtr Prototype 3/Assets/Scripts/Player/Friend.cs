@@ -43,12 +43,9 @@ public class Friend : MonoBehaviour {
 
     public void Talk()
     {
-        
-        //if (hasClicked == false)
-        //{
-            FindObjectOfType<AudioManager>().Play("Click");
-        //   hasClicked = true;
-        //}
+     
+        FindObjectOfType<AudioManager>().Play("Click");
+ 
         talkPanel.SetActive(true);
         FindObjectOfType<TalkHandler>().reRoll = true;
     }
