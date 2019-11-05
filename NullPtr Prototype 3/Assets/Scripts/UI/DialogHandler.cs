@@ -74,7 +74,7 @@ public class DialogHandler : MonoBehaviour {
         }
         else
         {
-            GlobalData.TimeOfDay = 1;
+            GlobalData.TimeOfDay = 2;
             FindObjectOfType<MessageBox>().DisplayMessage("Time to head home", 5f);
             desk.GetComponent<Desk>().Leave();
             foreach (DialogStucture item in dialogSets)
