@@ -1297,7 +1297,7 @@ Transform:
   - {fileID: 104766335}
   - {fileID: 1652987866}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288076987
 GameObject:
@@ -2076,7 +2076,7 @@ PrefabInstance:
     - target: {fileID: 6245499198226007780, guid: 7d17d46243214264d85160a4e1a536a2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6245499198226007780, guid: 7d17d46243214264d85160a4e1a536a2,
         type: 3}
@@ -2244,7 +2244,7 @@ Transform:
   - {fileID: 1690991056}
   - {fileID: 1033214613}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &443796714 stripped
 Transform:
@@ -2596,7 +2596,7 @@ Transform:
   m_LocalScale: {x: 500, y: 1, z: 500}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &491227677
 GameObject:
@@ -2628,7 +2628,7 @@ Transform:
   - {fileID: 1655987076}
   - {fileID: 240896045}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &492798931 stripped
 Transform:
@@ -3317,6 +3317,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1200177449085180, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
+      propertyPath: m_Name
+      value: ScriptPiggy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
+        type: 3}
+      propertyPath: fadePanel
+      value: 
+      objectReference: {fileID: 1398835710}
+    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
+        type: 3}
+      propertyPath: targetScene
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4063799091054778, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3360,20 +3374,6 @@ PrefabInstance:
     - target: {fileID: 4063799091054778, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1200177449085180, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
-      propertyPath: m_Name
-      value: ScriptPiggy
-      objectReference: {fileID: 0}
-    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
-        type: 3}
-      propertyPath: fadePanel
-      value: 
-      objectReference: {fileID: 1398835710}
-    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
-        type: 3}
-      propertyPath: targetScene
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 114649896992869132, guid: efe8cd1637c987b49aff9c61759a528d,
         type: 3}
@@ -3747,7 +3747,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!65 &710471364
 BoxCollider:
@@ -6730,7 +6730,7 @@ PrefabInstance:
     - target: {fileID: 5951880407001995333, guid: 40a642b65f303314eb376e3c01f863eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5951880407001995333, guid: 40a642b65f303314eb376e3c01f863eb,
         type: 3}
@@ -9743,51 +9743,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f8efbb3b4b1064a92acc708b0b1859, type: 3}
---- !u!1 &1805493243
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1805493245}
-  - component: {fileID: 1805493244}
-  m_Layer: 0
-  m_Name: AuidoManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1805493244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805493243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9384f831952360d428107e4ff15570fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  houseWorldBase: {fileID: 0}
-  Sounds: []
---- !u!4 &1805493245
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805493243}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0827003, y: 1.2786841, z: 1.3957849}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1829571530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10799,7 +10754,7 @@ Transform:
   - {fileID: 1567894634}
   - {fileID: 884598993}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2030257416
 PrefabInstance:
@@ -10961,6 +10916,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114478853737757620, guid: 3a1258c9b490b3b489f328945cd3cabd,
+        type: 3}
+      propertyPath: scriptPiggy
+      value: 
+      objectReference: {fileID: 320537563}
     - target: {fileID: 224721489060729942, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11066,11 +11034,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114478853737757620, guid: 3a1258c9b490b3b489f328945cd3cabd,
-        type: 3}
-      propertyPath: scriptPiggy
-      value: 
-      objectReference: {fileID: 320537563}
     - target: {fileID: 114064927444656554, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11096,14 +11059,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
-      propertyPath: m_Name
-      value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
