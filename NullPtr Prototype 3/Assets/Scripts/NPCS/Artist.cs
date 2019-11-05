@@ -26,7 +26,6 @@ public class Artist : MonoBehaviour
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
         NPCArtistStats.Hope = 35;
-        PlayerStats.Hope = 100;
         talkPanel.SetActive(false);
     }
 
@@ -59,7 +58,6 @@ public class Artist : MonoBehaviour
         talkPanel.SetActive(true);
 
         dialogue.dayDialogue();
-        //dayNumber();
    
     }
 
@@ -94,6 +92,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope += 35;
                 break;
         }
+        GlobalData.TimeOfDay += 1;
         talkPanel.SetActive(false);
     }
 
@@ -129,6 +128,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope -= 15;
                 break;
         }
+         GlobalData.TimeOfDay += 1;
         talkPanel.SetActive(false);
     }
 

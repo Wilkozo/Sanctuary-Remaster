@@ -12,7 +12,7 @@ public static class GlobalData
     private static int dayCount;
 
     
-    public static int TimeOfDay //0 - 2
+    public static int TimeOfDay
     {
         get
         {
