@@ -52,10 +52,12 @@ public class Artist : MonoBehaviour
 
     public void talk() {
 
+        talkButton.SetActive(false);
         //plays audio
         FindObjectOfType<AudioManager>().Play("Click");
         //enable the buttons and text
         talkPanel.SetActive(true);
+
         dialogue.dayDialogue();
         //dayNumber();
    
@@ -92,6 +94,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope += 35;
                 break;
         }
+        talkPanel.SetActive(false);
     }
 
     public void disagree() {
@@ -126,6 +129,7 @@ public class Artist : MonoBehaviour
                 NPCArtistStats.Hope -= 15;
                 break;
         }
+        talkPanel.SetActive(false);
     }
 
 
@@ -140,6 +144,28 @@ public class Artist : MonoBehaviour
 
     public void OnTriggerExit2D(Collider2D collision) {
         if (collision.tag == "Player") {
+            inRange = false;
+            talkButton.SetActive(false);
+            talkPanel.SetActive(false);
+        }
+    }
+
+    public void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = true;
+            if (playerSpriteIsActive)
+            {
+                talkButton.SetActive(true);
+            }
+        }
+    }
+
+    public void OnTriggerExit(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
             inRange = false;
             talkButton.SetActive(false);
             talkPanel.SetActive(false);

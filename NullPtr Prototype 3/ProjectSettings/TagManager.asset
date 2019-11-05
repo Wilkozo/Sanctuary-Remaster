@@ -13,6 +13,7 @@ TagManager:
   - UP
   - DOWN
   - Mirror
+  - CullBuilding
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - PostProcessing
   - 
   - DialCheck
-  - 
+  - Selection
   - 
   - 
   - 
