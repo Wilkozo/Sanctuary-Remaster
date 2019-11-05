@@ -12970,7 +12970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513109700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: -8, y: 0, z: 10}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_Children: []
   m_Father: {fileID: 1968755695}
@@ -18337,15 +18337,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2035862578}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
-=======
 --- !u!4 &1967159253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4254831292096140, guid: f514e0a34673d844ea7c3f0f186c1244,
     type: 3}
   m_PrefabInstance: {fileID: 2035862578}
   m_PrefabAsset: {fileID: 0}
->>>>>>> Stashed changes
 --- !u!1 &1968755694
 GameObject:
   m_ObjectHideFlags: 0

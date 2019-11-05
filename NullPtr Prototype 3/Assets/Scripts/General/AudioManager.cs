@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour
         HouseWorld = houseWorldBase.GetComponent<SceneSwitcher>();
         // Complicated error when actively Testing there isn't any sound when audio being
         // Played is run through this check...
-        if (CurrentScene == "HomeExt")
+        if (CurrentScene == "TestScene01")
         {
 
             // Currently Appears In Other Scenes 
@@ -78,7 +78,7 @@ public class AudioManager : MonoBehaviour
             //DontDestroyOnLoad(gameObject);
             WorldMusicActive = true;
         }
-        if (CurrentScene == "SchoolExt")
+        if (CurrentScene == "TestScene01")
         {
             // Same Issue As Stated Above...
             //DontDestroyOnLoad(gameObject);
