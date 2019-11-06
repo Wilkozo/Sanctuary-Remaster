@@ -16,7 +16,7 @@ public class Artist : MonoBehaviour
     public bool playerSpriteIsActive = true;
     public GameObject talkPanel;
     bool hasClicked = false;
-   
+
     public bool badChoice = false;
 
     public int day = 1;
@@ -25,7 +25,7 @@ public class Artist : MonoBehaviour
     {
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
-        NPCArtistStats.Hope = 35;
+        //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
     }
 
@@ -37,7 +37,7 @@ public class Artist : MonoBehaviour
         sprite.transform.localPosition = new Vector3(0, Mathf.Sin((bobOffset + Time.time) * 3) * 0.05f, 0);
 
         //checks to see if the npc has lost hope
-        if (NPCArtistStats.Hope <= 0)
+        if (NPCArtistStats.Hope < 0)
         {
             playerSpriteIsActive = false;
         }
@@ -63,6 +63,9 @@ public class Artist : MonoBehaviour
 
     public void agree() {
 
+        GlobalData.TimeOfDay += 2;
+        GlobalData.talkedToArtist = true;
+       
         switch (NPCArtistStats.Hope) {
             case 10:
                 NPCArtistStats.Hope -= 10;
@@ -88,16 +91,18 @@ public class Artist : MonoBehaviour
             case 80:
                 NPCArtistStats.Hope -= 40;
                 break;
-            default:
-                NPCArtistStats.Hope += 35;
+            case 0:
+                NPCArtistStats.Hope += 70;
                 break;
         }
-        GlobalData.TimeOfDay += 1;
-        GlobalData.talkedToArtist = true;
+
         talkPanel.SetActive(false);
     }
 
     public void disagree() {
+
+        GlobalData.TimeOfDay += 2;
+        GlobalData.talkedToArtist = true;
 
         switch (NPCArtistStats.Hope)
         {
@@ -125,12 +130,11 @@ public class Artist : MonoBehaviour
             case 80:
                 NPCArtistStats.Hope += 10;
                 break;
-            default:
-                NPCArtistStats.Hope -= 15;
+            case 0:
+                NPCArtistStats.Hope -= 50;
                 break;
         }
-         GlobalData.TimeOfDay += 1;
-        GlobalData.talkedToArtist = true;
+
         talkPanel.SetActive(false);
     }
 
@@ -138,7 +142,7 @@ public class Artist : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D collision) {
         if (collision.tag == "Player") {
             inRange = true;
-            if (playerSpriteIsActive && GlobalData.talkedToArtist == false) {
+            if (playerSpriteIsActive) {
                 talkButton.SetActive(true);        
             }
         }
@@ -157,7 +161,7 @@ public class Artist : MonoBehaviour
         if (collision.tag == "Player")
         {
             inRange = true;
-            if (playerSpriteIsActive && GlobalData.talkedToArtist == false)
+            if (playerSpriteIsActive)
             {
                 talkButton.SetActive(true);
             }

@@ -3543,6 +3543,7 @@ PrefabInstance:
       objectReference: {fileID: 2047362008}
     m_RemovedComponents:
     - {fileID: 1116077932317727293, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
+    - {fileID: 1023277441982664483, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
 --- !u!1 &664804691 stripped
 GameObject:
@@ -5726,8 +5727,8 @@ GameObject:
   - component: {fileID: 1071579632}
   - component: {fileID: 1071579631}
   - component: {fileID: 1071579634}
-  - component: {fileID: 1071579635}
   - component: {fileID: 1071579636}
+  - component: {fileID: 1071579635}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
