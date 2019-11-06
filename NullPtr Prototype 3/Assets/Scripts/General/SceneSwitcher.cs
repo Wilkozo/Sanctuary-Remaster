@@ -115,6 +115,7 @@ public class SceneSwitcher : MonoBehaviour {
                 isSwitching = true;
                 GlobalData.Day += 1;
                 GlobalData.talkedToArtist = false;
+                GlobalData.talkedToPastor = false;
             }
             else
             {

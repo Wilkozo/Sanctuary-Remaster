@@ -11,6 +11,7 @@ public static class GlobalData
     private static bool dreamDefeated = false;
     private static int dayCount;
     private static bool TalkedToArtist = false;
+    private static bool TalkedToPastor = false;
 
     
     public static int TimeOfDay
@@ -33,6 +34,19 @@ public static class GlobalData
         set
         {
             TalkedToArtist = value;
+        }
+
+    }
+
+    public static bool talkedToPastor
+    {
+        get
+        {
+            return TalkedToPastor;
+        }
+        set
+        {
+            TalkedToPastor = value;
         }
 
     }
