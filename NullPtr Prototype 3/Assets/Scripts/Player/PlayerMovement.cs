@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // player bobbing
-        this.transform.localPosition = new Vector3(this.transform.localPosition.x, Mathf.Sin(Time.time * 3) * 0.01f + this.transform.localPosition.y, this.transform.localPosition.z);
+        this.transform.localPosition = new Vector3(this.transform.localPosition.x, Mathf.Sin(Time.time * 3) * 0.005f + this.transform.localPosition.y, this.transform.localPosition.z);
 
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");

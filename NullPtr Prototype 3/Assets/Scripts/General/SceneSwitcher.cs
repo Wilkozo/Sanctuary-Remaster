@@ -85,8 +85,6 @@ public class SceneSwitcher : MonoBehaviour {
     {
         if (!isSwitching)
         {
-            
-            
             Vector4 initialColor = fadeImage.color;
             fadeImage.DOFade(1, fadeTime / 2).SetEase(Ease.InOutSine);
             fadeTimeCur = fadeTime;
@@ -125,23 +123,19 @@ public class SceneSwitcher : MonoBehaviour {
         {
             if (GlobalData.GetSetCurrentActions <= 2)
             {
-                if (GlobalData.GetSetCurrentActions == 2)
-                {
-                    GlobalData.GetSetCurrentActions = GlobalData.InAction + 2;
-                }
-
-                if (GlobalData.GetSetCurrentActions <=1)
+                if (GlobalData.GetSetCurrentActions <= 1)
                 {
                     GlobalData.GetSetCurrentActions = GlobalData.InAction;
+                    GlobalData.GetSetTired = false;
                 }
-
-                if(GlobalData.GetSetVeryTired == true)
+                else if (GlobalData.GetSetVeryTired == true)
                 {
                     GlobalData.GetSetVeryTired = false;
+                    GlobalData.GetSetCurrentActions = GlobalData.InAction - 1;
                 }
-                else if(GlobalData.GetSetTired == true)
+                else if (GlobalData.GetSetCurrentActions == 2)
                 {
-                    GlobalData.GetSetTired = false;
+                    GlobalData.GetSetCurrentActions = GlobalData.InAction + 2;
                 }
 
                 Vector4 initialColor = fadeImage.color;
