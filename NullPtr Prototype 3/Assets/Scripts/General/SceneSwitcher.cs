@@ -62,6 +62,23 @@ public class SceneSwitcher : MonoBehaviour {
             SceneManager.LoadScene(targetScene);
         }
 
+        //I think another & to this if is needed for actions that lead 
+        //to more text or it will load the next scene too quickly
+        if(GlobalData.GetSetCurrentActions <= 0 && GlobalData.InMessage == false)
+        {
+            if(GlobalData.GetSetTired == false)
+            {
+                GlobalData.GetSetCurrentActions = GlobalData.InAction - 1;
+                GlobalData.GetSetTired = true;
+            }
+            else
+            {
+                GlobalData.GetSetCurrentActions = GlobalData.InAction - 2;
+                GlobalData.GetSetVeryTired = true;
+            }
+
+            SceneManager.LoadScene("Home");
+        }
 	}
 
     public void SceneSwitch(string scene)
@@ -106,8 +123,27 @@ public class SceneSwitcher : MonoBehaviour {
     {
         if (!isSwitching)
         {
-            if (GlobalData.TimeOfDay == 2)
+            if (GlobalData.GetSetCurrentActions <= 2)
             {
+                if (GlobalData.GetSetCurrentActions == 2)
+                {
+                    GlobalData.GetSetCurrentActions = GlobalData.InAction + 2;
+                }
+
+                if (GlobalData.GetSetCurrentActions <=1)
+                {
+                    GlobalData.GetSetCurrentActions = GlobalData.InAction;
+                }
+
+                if(GlobalData.GetSetVeryTired == true)
+                {
+                    GlobalData.GetSetVeryTired = false;
+                }
+                else if(GlobalData.GetSetTired == true)
+                {
+                    GlobalData.GetSetTired = false;
+                }
+
                 Vector4 initialColor = fadeImage.color;
                 fadeImage.DOFade(1, fadeTime / 2).SetEase(Ease.InOutSine);
                 fadeTimeCur = fadeTime;
