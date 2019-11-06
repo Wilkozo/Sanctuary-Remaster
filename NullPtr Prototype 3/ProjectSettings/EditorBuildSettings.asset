@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FightClub.unity
     guid: fc14a3b304fca22408407f563dc94afd
+  - enabled: 1
+    path: Assets/Scenes/HarrysTestingScenes/TestScene02.unity
+    guid: 6d818835b8a495c41809ecba65157db7
   m_configObjects: {}
