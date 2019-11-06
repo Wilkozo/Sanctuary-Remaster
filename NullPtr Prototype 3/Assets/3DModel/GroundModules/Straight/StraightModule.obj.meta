@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0d7359987e0aa6b4786f2404f7325a61
+guid: 6bd8b9405cce602478face492f110654
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: polySurface88Mat
-    second: {fileID: 2100000, guid: cb1884767c6498a41961c4e619d730ae, type: 2}
+    second: {fileID: 2100000, guid: 7628c10abe5029547bb9f6ba9b01e2f4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
