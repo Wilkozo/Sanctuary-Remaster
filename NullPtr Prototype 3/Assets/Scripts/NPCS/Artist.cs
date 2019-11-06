@@ -27,6 +27,9 @@ public class Artist : MonoBehaviour
         bobOffset = Random.Range(0.0f, 1.0f);
         //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
+
+        Debug.Log(NPCArtistStats.Hope);
+
     }
 
     void Update()
@@ -41,7 +44,6 @@ public class Artist : MonoBehaviour
         {
             playerSpriteIsActive = false;
         }
-
     }
 
     //changes the text based on the day 
@@ -161,7 +163,7 @@ public class Artist : MonoBehaviour
         if (collision.tag == "Player")
         {
             inRange = true;
-            if (playerSpriteIsActive)
+            if (playerSpriteIsActive && GlobalData.talkedToArtist == false)
             {
                 talkButton.SetActive(true);
             }

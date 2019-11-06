@@ -12,7 +12,6 @@ public class CullBuildings : MonoBehaviour
         buildings = GameObject.FindGameObjectsWithTag("CullBuilding");
         foreach (GameObject building in buildings) {
             building.GetComponent<MeshRenderer>().material.SetOverrideTag("RenderType", "Opaque");
-                //color = new Color(1, 1, 1, 0.99f);
         }     
     }
 
