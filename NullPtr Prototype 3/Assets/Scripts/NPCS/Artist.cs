@@ -65,7 +65,7 @@ public class Artist : MonoBehaviour
 
     public void agree() {
 
-        GlobalData.TimeOfDay += 2;
+        GlobalData.TimeOfDay += 1;
         GlobalData.talkedToArtist = true;
        
         switch (NPCArtistStats.Hope) {
@@ -103,7 +103,7 @@ public class Artist : MonoBehaviour
 
     public void disagree() {
 
-        GlobalData.TimeOfDay += 2;
+        GlobalData.TimeOfDay += 1;
         GlobalData.talkedToArtist = true;
 
         switch (NPCArtistStats.Hope)

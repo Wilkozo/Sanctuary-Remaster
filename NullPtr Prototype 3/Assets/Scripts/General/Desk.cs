@@ -40,7 +40,7 @@ public class Desk : MonoBehaviour {
 
     public void Sit()
     {
-        if (GlobalData.TimeOfDay < 2)
+        if (GlobalData.TimeOfDay < 4)
         {
             nav.isActive = false;
             //isSitting = true;
