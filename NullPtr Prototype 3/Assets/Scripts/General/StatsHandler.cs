@@ -23,13 +23,13 @@ public class StatsHandler : MonoBehaviour {
     {
 
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            //PlayerStats.Hope += 10;
+            PlayerStats.Hope += 10;
         }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            //PlayerStats.Hope -= 10;
+            PlayerStats.Hope -= 10;
         }
         PlayerStats.Hope = Mathf.Clamp(PlayerStats.Hope, 0, 100);
 

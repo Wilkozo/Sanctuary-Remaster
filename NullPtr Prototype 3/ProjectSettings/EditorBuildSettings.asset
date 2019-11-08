@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WorldScene.unity
     guid: 88ef48f1c6acdb042b0884f135ce2a64
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HomeExt.unity
     guid: de2349e447e1b574888defa2c8e622c7
   - enabled: 1
