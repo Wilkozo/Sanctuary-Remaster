@@ -28,8 +28,6 @@ public class Pastor : MonoBehaviour
         //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
 
-        Debug.Log(NPCPastor.Hope);
-
     }
 
     void Update()
@@ -68,7 +66,7 @@ public class Pastor : MonoBehaviour
     public void agree()
     {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions += 1;
         GlobalData.talkedToPastor = true;
 
         switch (NPCPastor.Hope)
@@ -108,7 +106,7 @@ public class Pastor : MonoBehaviour
     public void disagree()
     {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions += 1;
         GlobalData.talkedToPastor = true;
 
         switch (NPCPastor.Hope)

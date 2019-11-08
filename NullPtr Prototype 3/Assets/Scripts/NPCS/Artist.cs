@@ -28,8 +28,6 @@ public class Artist : MonoBehaviour
         //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
 
-        Debug.Log(NPCArtistStats.Hope);
-
     }
 
     void Update()
@@ -65,7 +63,7 @@ public class Artist : MonoBehaviour
 
     public void agree() {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions += 1;
         GlobalData.talkedToArtist = true;
        
         switch (NPCArtistStats.Hope) {
@@ -103,7 +101,7 @@ public class Artist : MonoBehaviour
 
     public void disagree() {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions += 1;
         GlobalData.talkedToArtist = true;
 
         switch (NPCArtistStats.Hope)
