@@ -9,12 +9,12 @@ public class FogEffect : MonoBehaviour
     ParticleSystem.EmissionModule fogModule1;
     ParticleSystem.EmissionModule fogModule2;
 
-    public Light directionLight;
+    public Light[] directionLight;
 
 
     private void Start()
     {
-        directionLight = FindObjectOfType<Light>();
+        directionLight = FindObjectsOfType<Light>();
         //PlayerStats.Hope = 10;
         fogModule1 = FogLayer1.emission;
         fogModule2 = FogLayer2.emission;
@@ -25,31 +25,46 @@ public class FogEffect : MonoBehaviour
     {
         if (PlayerStats.Hope < 20)
         {
-            directionLight.intensity = 0.25f;
+            foreach (Light light in directionLight){
+                light.intensity = 0.25f;
+            }
             fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(500);
             fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(500);
         }
         else if (PlayerStats.Hope < 40)
         {
-            directionLight.intensity = 0.45f;
-            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(8);
-            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(8);
+            foreach (Light light in directionLight)
+            {
+                light.intensity = 0.45f;
+            }
+            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(300);
+            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(300);
         }
         else if (PlayerStats.Hope < 60)
         {
-            directionLight.intensity = 0.65f;
-            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(6);
-            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(6);
+            foreach (Light light in directionLight)
+            {
+                light.intensity = 0.65f;
+            }
+            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(150);
+            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(150);
         }
         else if (PlayerStats.Hope < 80)
         {
-            directionLight.intensity = 0.85f;
-            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(4);
-            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(4);
+            foreach (Light light in directionLight)
+            {
+                light.intensity = 0.85f;
+            }
+            fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(8);
+            fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(8);
         }
-        else if (PlayerStats.Hope < 1000)
+        else if (PlayerStats.Hope < 100)
         {
-            directionLight.intensity = 1.0f;
+            foreach (Light light in directionLight)
+            {
+                light.intensity = 1.0f;
+            }
+         
             fogModule1.rateOverTime = new ParticleSystem.MinMaxCurve(2);
             fogModule2.rateOverTime = new ParticleSystem.MinMaxCurve(2);
         }
