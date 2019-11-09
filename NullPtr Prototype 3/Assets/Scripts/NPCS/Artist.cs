@@ -63,7 +63,7 @@ public class Artist : MonoBehaviour
 
     public void agree() {
 
-        GlobalData.GetSetCurrentActions += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToArtist = true;
        
         switch (NPCArtistStats.Hope) {
@@ -101,7 +101,7 @@ public class Artist : MonoBehaviour
 
     public void disagree() {
 
-        GlobalData.GetSetCurrentActions += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToArtist = true;
 
         switch (NPCArtistStats.Hope)
