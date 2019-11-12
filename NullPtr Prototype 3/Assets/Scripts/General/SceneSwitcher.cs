@@ -106,13 +106,16 @@ public class SceneSwitcher : MonoBehaviour {
     {
         if (!isSwitching)
         {
-            if (GlobalData.TimeOfDay == 2)
+            if (GlobalData.TimeOfDay >= 2)
             {
                 Vector4 initialColor = fadeImage.color;
                 fadeImage.DOFade(1, fadeTime / 2).SetEase(Ease.InOutSine);
                 fadeTimeCur = fadeTime;
                 targetScene = "FightClub";
                 isSwitching = true;
+                GlobalData.Day += 1;
+                GlobalData.talkedToArtist = false;
+                GlobalData.talkedToPastor = false;
             }
             else
             {

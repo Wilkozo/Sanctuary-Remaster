@@ -6,8 +6,8 @@ using DG.Tweening;
 
 public class PlayerMove : MonoBehaviour {
 
-    [SerializeField] private bool FacingDir;
-    [SerializeField] private float movespeed;
+    //[SerializeField] private bool FacingDir;
+    [SerializeField] private float moveSpeed = 5.0f;
     [SerializeField] private GameObject targetObject;
     [SerializeField] private GameObject scriptPiggy;
 
@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour {
     private int sign = 0;
 
     private SceneSwitcher sceneSwitcher;
+    private Rigidbody2D rb;
 
     public Vector2 iniPos;
 
@@ -30,6 +31,8 @@ public class PlayerMove : MonoBehaviour {
 
         playerSprite = transform.Find("PlayerSprite").gameObject;
 
+        rb = GetComponent<Rigidbody2D>();
+        moveSpeed = 5.0f;
 
     }
 
@@ -45,23 +48,31 @@ public class PlayerMove : MonoBehaviour {
         // player bobbing
         playerSprite.transform.localPosition = new Vector3(0, Mathf.Sin(Time.time * 3) * 0.05f, 0);
 
-        sign = 0;
-        if (!reachedTarget)
-        {
-            if (transform.position.x < targetObject.transform.position.x)
-            {
-                transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-                sign = 1;
-            }
-            else
-            {
-               transform.localScale = new Vector3(-1.0f, 1.0f,  1.0f);
-                sign = -1;
-            }
-        }
 
-        float moveVector = movespeed * Time.deltaTime * sign;
-        transform.Translate(Vector3.right * moveVector, Space.World);
+        float moveHorizontal = Input.GetAxis("Horizontal");
+
+        Vector2 movement = new Vector2(moveHorizontal * moveSpeed, 0.0f);
+
+        rb.velocity = movement;
+
+
+        //sign = 0;
+        //if (!reachedTarget)
+        //{
+        //    if (transform.position.x < targetObject.transform.position.x)
+        //    {
+        //        transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        //        sign = 1;
+        //    }
+        //    else
+        //    {
+        //       transform.localScale = new Vector3(-1.0f, 1.0f,  1.0f);
+        //        sign = -1;
+        //    }
+        //}
+
+        //float moveVector = movespeed * Time.deltaTime * sign;
+        //transform.Translate(Vector3.right * moveVector, Space.World);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

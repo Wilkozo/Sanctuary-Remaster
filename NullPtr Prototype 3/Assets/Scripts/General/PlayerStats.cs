@@ -18,3 +18,37 @@ public static class PlayerStats
         }
     }
 }
+
+public static class NPCArtistStats
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
+public static class NPCPastor
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}

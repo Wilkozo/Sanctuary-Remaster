@@ -57,4 +57,22 @@ public class Navigator : MonoBehaviour {
             inRange = false;
         }
     }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = false;
+        }
+    }
+
+
 }
