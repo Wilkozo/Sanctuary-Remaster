@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Artist : MonoBehaviour
+public class Drunk : MonoBehaviour
 {
-    [SerializeField] ArtistDialogue dialogue;
+    [SerializeField] DrunkDialogue dialogue;
 
 
     public GameObject talkButton;
@@ -25,7 +25,6 @@ public class Artist : MonoBehaviour
     {
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
-        //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
 
     }
@@ -38,18 +37,20 @@ public class Artist : MonoBehaviour
         sprite.transform.localPosition = new Vector3(0, Mathf.Sin((bobOffset + Time.time) * 3) * 0.05f, 0);
 
         //checks to see if the npc has lost hope
-        if (NPCArtistStats.Hope < 0)
+        if (NPCDrunk.Hope < 0)
         {
             playerSpriteIsActive = false;
         }
     }
 
     //changes the text based on the day 
-    public void dayNumber() {
+    public void dayNumber()
+    {
         dialogue.dayDialogue();
     }
 
-    public void talk() {
+    public void talk()
+    {
 
         talkButton.SetActive(false);
         //plays audio
@@ -58,102 +59,87 @@ public class Artist : MonoBehaviour
         talkPanel.SetActive(true);
 
         dialogue.dayDialogue();
-   
+
     }
 
-    public void agree() {
+    public void agree()
+    {
 
         GlobalData.GetSetCurrentActions -= 1;
-        GlobalData.talkedToArtist = true;
-       
-        switch (NPCArtistStats.Hope) {
-            case 10:
-                NPCArtistStats.Hope -= 10;
-                break;
-            case 20:
-                NPCArtistStats.Hope -= 10;
-                break;
-            case 30:
-                NPCArtistStats.Hope += 40;
-                break;
-            case 40:
-                NPCArtistStats.Hope -= 10;
-                break;
-            case 50:
-                NPCArtistStats.Hope += 10;
-                break;
-            case 60:
-                NPCArtistStats.Hope += 10;
-                break;
-            case 70:
-                NPCArtistStats.Hope += 10;
-                break;
-            case 80:
-                NPCArtistStats.Hope -= 40;
-                break;
-            case 0:
-                NPCArtistStats.Hope += 70;
-                break;
-        }
+        GlobalData.talkedToDrunk = true;
 
-        talkPanel.SetActive(false);
-    }
-
-    public void disagree() {
-
-        GlobalData.GetSetCurrentActions -= 1;
-        GlobalData.talkedToArtist = true;
-
-        switch (NPCArtistStats.Hope)
+        switch (NPCDrunk.Hope)
         {
             case 10:
-                NPCArtistStats.Hope += 10;
+                NPCDrunk.Hope -= 10;
                 break;
             case 20:
-                NPCArtistStats.Hope += 10;
+                NPCDrunk.Hope -= 10;
                 break;
             case 30:
-                NPCArtistStats.Hope -= 40;
+                NPCDrunk.Hope -= 10;
                 break;
             case 40:
-                NPCArtistStats.Hope += 10;
+                NPCDrunk.Hope += 40;
                 break;
             case 50:
-                NPCArtistStats.Hope -= 10;
+                NPCDrunk.Hope += 10;
                 break;
             case 60:
-                NPCArtistStats.Hope -= 10;
+                NPCDrunk.Hope -= 40;
                 break;
             case 70:
-                NPCArtistStats.Hope -= 10;
+                NPCDrunk.Hope += 10;
                 break;
             case 80:
-                NPCArtistStats.Hope += 10;
+                NPCDrunk.Hope -= 40;
                 break;
             case 0:
-                NPCArtistStats.Hope -= 50;
+                NPCDrunk.Hope += 70;
                 break;
         }
 
         talkPanel.SetActive(false);
     }
 
+    public void disagree()
+    {
 
-    public void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.tag == "Player") {
-            inRange = true;
-            if (playerSpriteIsActive) {
-                talkButton.SetActive(true);        
-            }
-        }
-    }
+        GlobalData.GetSetCurrentActions -= 1;
+        GlobalData.talkedToDrunk = true;
 
-    public void OnTriggerExit2D(Collider2D collision) {
-        if (collision.tag == "Player") {
-            inRange = false;
-            talkButton.SetActive(false);
-            talkPanel.SetActive(false);
+        switch (NPCDrunk.Hope)
+        {
+            case 10:
+                NPCDrunk.Hope += 40;
+                break;
+            case 20:
+                NPCDrunk.Hope += 40;
+                break;
+            case 30:
+                NPCDrunk.Hope += 40;
+                break;
+            case 40:
+                NPCDrunk.Hope -= 10;
+                break;
+            case 50:
+                NPCDrunk.Hope -= 40;
+                break;
+            case 60:
+                NPCDrunk.Hope += 10;
+                break;
+            case 70:
+                NPCDrunk.Hope -= 40;
+                break;
+            case 80:
+                NPCDrunk.Hope += 10;
+                break;
+            case 0:
+                NPCDrunk.Hope += 20;
+                break;
         }
+
+        talkPanel.SetActive(false);
     }
 
     public void OnTriggerEnter(Collider collision)
@@ -161,7 +147,7 @@ public class Artist : MonoBehaviour
         if (collision.tag == "Player")
         {
             inRange = true;
-            if (playerSpriteIsActive && GlobalData.talkedToArtist == false)
+            if (playerSpriteIsActive && GlobalData.talkedToDrunk == false)
             {
                 talkButton.SetActive(true);
             }

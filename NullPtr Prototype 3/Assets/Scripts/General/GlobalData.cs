@@ -10,10 +10,89 @@ public static class GlobalData
     private static string lastScene = "HomeExt";
     private static bool dreamDefeated = false;
     private static int dayCount;
+    private static int currentNumOfActions;
+    private static int baseNumOfActions = 6; // Prevents setting to another value
+    private static bool isTired;
+    private static bool isVeryTired;
+    private static bool isWellRested;
+    private static bool isInMessage;
     private static bool TalkedToArtist = false;
     private static bool TalkedToPastor = false;
+    private static bool TalkedToBreakUp = false;
+    private static bool TalkedToDrunk = false;
 
-    
+    public static int InAction
+    {
+        get
+        {
+            return baseNumOfActions;
+        }
+        set
+        {
+            baseNumOfActions = 6;
+        }
+    }
+
+    public static bool GetSetVeryTired
+    {
+        get
+        {
+            return isVeryTired;
+        }
+        set
+        {
+            isVeryTired = value;
+        }
+    }
+
+    public static bool InMessage
+    {
+        get
+        {
+            return isInMessage;
+        }
+        set
+        {
+            isInMessage = value;
+        }
+    } // Needed to prevent action ending scene auto to change scenes. 
+
+    public static int GetSetCurrentActions
+    {
+        get
+        {
+            return currentNumOfActions;
+        }
+        set
+        {
+            currentNumOfActions = value;
+        }
+    }
+
+    public static bool GetSetTired
+    {
+        get
+        {
+            return isTired;
+        }
+        set
+        {
+            isTired = value;
+        }
+    }
+
+    public static bool GetSetWellRested
+    {
+        get
+        {
+            return isWellRested;
+        }
+        set
+        {
+            isWellRested = value;
+        }
+    }
+
     public static int TimeOfDay
     {
         get
@@ -38,11 +117,38 @@ public static class GlobalData
 
     }
 
+    public static bool talkedToDrunk
+    {
+        get
+        {
+            return TalkedToDrunk;
+        }
+        set
+        {
+            TalkedToDrunk = value;
+        }
+
+    }
+
     public static bool talkedToPastor
     {
         get
         {
             return TalkedToPastor;
+        }
+        set
+        {
+            TalkedToPastor = value;
+        }
+
+    }
+
+
+    public static bool talkedToBreakUp
+    {
+        get
+        {
+            return TalkedToBreakUp;
         }
         set
         {

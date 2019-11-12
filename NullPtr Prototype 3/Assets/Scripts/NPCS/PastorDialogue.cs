@@ -19,7 +19,6 @@ public class PastorDialogue : MonoBehaviour
         dayDialogue();
     }
 
-    //TODO: Add in the dialogue
     public void dayDialogue()
     {
 
