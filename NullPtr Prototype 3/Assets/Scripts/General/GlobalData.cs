@@ -21,6 +21,7 @@ public static class GlobalData
     private static bool TalkedToBreakUp = false;
     private static bool TalkedToDrunk = false;
     private static bool TalkedToFat = false;
+    private static bool TalkedToPoor = false;
 
     public static int InAction
     {
@@ -114,6 +115,19 @@ public static class GlobalData
         set
         {
             TalkedToArtist = value;
+        }
+
+    }
+
+    public static bool talkedToPoor
+    {
+        get
+        {
+            return TalkedToPoor;
+        }
+        set
+        {
+            TalkedToPoor = value;
         }
 
     }

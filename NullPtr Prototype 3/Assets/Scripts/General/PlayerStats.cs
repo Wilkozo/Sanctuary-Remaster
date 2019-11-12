@@ -89,6 +89,23 @@ public static class NPCPastor
     }
 }
 
+public static class NPCPoor
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
 
 public static class NPCBreakUp
 {

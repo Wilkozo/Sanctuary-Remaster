@@ -22,7 +22,7 @@ public class FatDialogue : MonoBehaviour
     public void dayDialogue()
     {
 
-        switch (NPCPastor.Hope)
+        switch (NPCFat.Hope)
         {
             case 0:
                 scrambler.StringBuffer = "Why am I tired all the time. I got lots of sleep last night and I eat all the time so I should have energy to spare. It must be genetics";
