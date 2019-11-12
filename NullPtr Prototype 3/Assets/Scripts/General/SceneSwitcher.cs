@@ -121,8 +121,11 @@ public class SceneSwitcher : MonoBehaviour {
     {
         if (!isSwitching)
         {
-            if (GlobalData.GetSetCurrentActions >= 2)
+            if (GlobalData.GetSetCurrentActions <= 2)
             {
+                if (GlobalData.GetSetCurrentActions <= 1) {
+
+                }
                 if (GlobalData.GetSetCurrentActions >= 1)
                 {
                     GlobalData.GetSetCurrentActions = GlobalData.InAction;
@@ -146,6 +149,8 @@ public class SceneSwitcher : MonoBehaviour {
                 GlobalData.Day += 1;
                 GlobalData.talkedToArtist = false;
                 GlobalData.talkedToPastor = false;
+                GlobalData.talkedToBreakUp = false;
+                GlobalData.talkedToDrunk = false;
             }
             else
             {

@@ -152,7 +152,7 @@ public static class GlobalData
         }
         set
         {
-            TalkedToPastor = value;
+            TalkedToBreakUp = value;
         }
 
     }
