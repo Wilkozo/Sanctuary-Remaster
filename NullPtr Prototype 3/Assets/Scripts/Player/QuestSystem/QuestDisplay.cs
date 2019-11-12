@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using QuestSystem;
 public class QuestDisplay : MonoBehaviour
 {
     [SerializeField] bool showQuests;
@@ -19,9 +19,10 @@ public class QuestDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach(QuestHolder.CurrentQuests)
+        string bigString;
+        foreach (Quest it  in QuestHolder.CurrentQuests)
         {
-            i
+            bigString = it.GetString();
         }
     }
 }

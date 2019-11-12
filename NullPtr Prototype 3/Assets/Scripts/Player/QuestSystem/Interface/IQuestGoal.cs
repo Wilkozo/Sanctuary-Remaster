@@ -10,7 +10,7 @@ namespace QuestSystem
         bool IsComplete { get; }
         bool IsSecondary { get; }
         void UpdateProgress();
-        void CheckProgress();
+        void CheckProgress(GameObject item);
     }
 }
 

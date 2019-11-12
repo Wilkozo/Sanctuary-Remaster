@@ -6,7 +6,7 @@ using QuestSystem;
 public static class QuestHolder
 {
     public static List<Quest> CurrentQuests;
-    public static List<Quest> DoneQuest;
+    public static List<Quest> DoneQuests;
 
     public static void AddQuestToCurrent(Quest newQuest)
     {
@@ -14,7 +14,33 @@ public static class QuestHolder
     }
     public static void AddQuestToDone(Quest newQuest)
     {
-        DoneQuest.Add(newQuest);
+        DoneQuests.Add(newQuest);
+    }
+    public static void RemoveQuestFromCurrent(int index)
+    {
+        CurrentQuests.RemoveAt(index);
+    }
+    public static void RemoveQuestFromDone(int index) // Not really needed
+    {
+        DoneQuests.RemoveAt(index);
+    }
+    public static bool isQuestAlreadyGiven(int ID)
+    {
+        foreach (Quest it in CurrentQuests)
+        {
+            if(ID == it.questIdentifier._questID)
+            {
+                return true;
+            }
+        }
+        foreach (Quest it in DoneQuests)
+        {
+            if(ID == it.questIdentifier._questID)
+            {
+                return true;
+            }
+        }
+        return false;
     }
     // Update is called once per frame
 }

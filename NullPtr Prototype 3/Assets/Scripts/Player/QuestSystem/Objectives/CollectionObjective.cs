@@ -29,6 +29,7 @@ namespace QuestSystem
             title = _title;
             description = _description;
             collectionAmount = _totalAmount;
+            itemToCollect = _item;
             verb = _verb;
             currentAmount = 0;
             isSecondary = secondary;
@@ -90,9 +91,12 @@ namespace QuestSystem
             }
         }
 
-        public void CheckProgress()
+        public void CheckProgress(GameObject item)
         {
-            throw new System.NotImplementedException();
+            if(item = itemToCollect)
+            {
+                currentAmount++;
+            }
         }
 
         public void UpdateProgress()

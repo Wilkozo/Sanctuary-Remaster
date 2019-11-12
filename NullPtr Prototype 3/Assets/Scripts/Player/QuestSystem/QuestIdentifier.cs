@@ -8,10 +8,11 @@ namespace QuestSystem
         private int sourceID; //Where the quest came from
         private int chainQuestID; //
 
-        QuestIdentifier(int _questID)
+        public QuestIdentifier(int _questID)
         {
             questID = _questID;
         }
+
         public int _sourceID
         {
             get
