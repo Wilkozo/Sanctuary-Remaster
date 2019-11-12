@@ -121,9 +121,9 @@ public class SceneSwitcher : MonoBehaviour {
     {
         if (!isSwitching)
         {
-            if (GlobalData.GetSetCurrentActions <= 2)
+            if (GlobalData.GetSetCurrentActions >= 2)
             {
-                if (GlobalData.GetSetCurrentActions <= 1)
+                if (GlobalData.GetSetCurrentActions >= 1)
                 {
                     GlobalData.GetSetCurrentActions = GlobalData.InAction;
                     GlobalData.GetSetTired = false;
