@@ -3,7 +3,12 @@ guid: 7679f55975338e04f924b4b05cb0839a
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DockRailLongMat
+    second: {fileID: 2100000, guid: 643612bdd3cbf504c81b001f6cee6b3a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
