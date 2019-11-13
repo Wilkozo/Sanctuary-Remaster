@@ -5353,6 +5353,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
+        type: 3}
+      propertyPath: fadePanel
+      value: 
+      objectReference: {fileID: 332458538}
     - target: {fileID: 4063799091054778, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -5385,11 +5390,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
-        type: 3}
-      propertyPath: fadePanel
-      value: 
-      objectReference: {fileID: 332458538}
     - target: {fileID: 114649896992869132, guid: efe8cd1637c987b49aff9c61759a528d,
         type: 3}
       propertyPath: PPHappy
@@ -6023,7 +6023,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SchoolExt
+          m_StringArgument: TestScene01
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &467577184
@@ -6195,16 +6195,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 225174846922369902, guid: 3a1258c9b490b3b489f328945cd3cabd,
-        type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114478853737757620, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: scriptPiggy
       value: 
       objectReference: {fileID: 267479784}
+    - target: {fileID: 225174846922369902, guid: 3a1258c9b490b3b489f328945cd3cabd,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114064927444656554, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -11696,6 +11696,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 114457583159015412, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: talkPanel
@@ -11706,19 +11711,14 @@ PrefabInstance:
       propertyPath: hopeThreshold
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 212984984546409356, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: m_FlipX
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
@@ -12632,6 +12632,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
     - target: {fileID: 114457583159015412, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: talkPanel
@@ -12641,11 +12646,6 @@ PrefabInstance:
         type: 3}
       propertyPath: hopeThreshold
       value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
       propertyPath: m_IsActive
@@ -12740,6 +12740,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4254831292096140, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4837854428186932, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -12768,6 +12772,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 50067488335858340, guid: f514e0a34673d844ea7c3f0f186c1244,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
         type: 3}
       propertyPath: targetObject
@@ -12783,15 +12792,6 @@ PrefabInstance:
       propertyPath: entryDoor
       value: 
       objectReference: {fileID: 1682656443}
-    - target: {fileID: 50067488335858340, guid: f514e0a34673d844ea7c3f0f186c1244,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4254831292096140, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
 --- !u!1 &1672648008
@@ -12900,7 +12900,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 6.26, y: 9.14}
   m_EdgeRadius: 0
 --- !u!114 &1682656446
 MonoBehaviour:

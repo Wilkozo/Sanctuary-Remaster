@@ -70,11 +70,26 @@ public class SceneSwitcher : MonoBehaviour {
             {
                 GlobalData.GetSetCurrentActions = GlobalData.InAction - 1;
                 GlobalData.GetSetTired = true;
+                GlobalData.Day += 1;
+                GlobalData.talkedToArtist = false;
+                GlobalData.talkedToPastor = false;
+                GlobalData.talkedToBreakUp = false;
+                GlobalData.talkedToDrunk = false;
+                GlobalData.talkedToPoor = false;
+                GlobalData.talkedToFat = false;
             }
             else
             {
                 GlobalData.GetSetCurrentActions = GlobalData.InAction - 2;
                 GlobalData.GetSetVeryTired = true;
+                GlobalData.Day += 1;
+                GlobalData.talkedToArtist = false;
+                GlobalData.talkedToPastor = false;
+                GlobalData.talkedToBreakUp = false;
+                GlobalData.talkedToDrunk = false;
+                GlobalData.talkedToPoor = false;
+                GlobalData.talkedToFat = false;
+
             }
 
             SceneManager.LoadScene("Home");
@@ -151,6 +166,8 @@ public class SceneSwitcher : MonoBehaviour {
                 GlobalData.talkedToPastor = false;
                 GlobalData.talkedToBreakUp = false;
                 GlobalData.talkedToDrunk = false;
+                GlobalData.talkedToPoor = false;
+                GlobalData.talkedToFat = false;
             }
             else
             {

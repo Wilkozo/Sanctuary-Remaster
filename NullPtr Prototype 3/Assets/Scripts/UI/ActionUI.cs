@@ -9,9 +9,14 @@ public class ActionUI : MonoBehaviour
     public List<GameObject> actionPoints;
     public GameObject[] ap;
 
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+        DontDestroyOnLoad(this.gameObject);
+
         ap = GameObject.FindGameObjectsWithTag("AP");
 
         Debug.Log(GlobalData.GetSetCurrentActions);

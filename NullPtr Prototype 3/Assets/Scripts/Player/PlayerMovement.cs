@@ -53,6 +53,18 @@ public class PlayerMovement : MonoBehaviour
         {
             iniPos = new Vector3(25.0f, 1.66f, 22.0f);
         }
+        else if (prevScene == "Store" && curScene == "TestScene01")
+        {
+            iniPos = new Vector3(-29.52168f, 1.66f, 20.8429f);
+        }
+        else if (prevScene == "Church" && curScene == "TestScene01")
+        {
+            iniPos = new Vector3(16.79f, 1.66f, -22.01f);
+        }
+        else if (prevScene == "Church" && curScene == "TestScene01")
+        {
+            iniPos = new Vector3(-24.61f, 1.66f, -12.71f);
+        }
         else //Any other "non special" cases
         {
             iniPos = transform.position;

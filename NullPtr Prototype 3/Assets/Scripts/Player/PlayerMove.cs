@@ -150,6 +150,7 @@ public class PlayerMove : MonoBehaviour {
                 FindObjectOfType<MessageBox>().DisplayMessage("Persistance is the key to victory", 5);
             }
         }
+
         else //Any other "non special" cases
         {
             iniPos = new Vector2(-3.48f, -2.75f);
