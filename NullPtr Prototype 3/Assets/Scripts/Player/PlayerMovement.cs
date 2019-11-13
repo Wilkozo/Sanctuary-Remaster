@@ -45,6 +45,10 @@ public class PlayerMovement : MonoBehaviour
         {
             iniPos = new Vector3(-4.45f, 1.66f, 12.1f);
         }
+        else if (curScene == "TestScene01" && prevScene == "TestScene02") //Outside School -> Keith
+        {
+            iniPos = new Vector3(-14.45f, 1.66f, 5.0f);
+        }
         else if (curScene == "TestScene01" && prevScene == "School") //Outside School -> Town
         {
             iniPos = new Vector3(25.0f, 1.66f, 22.0f);
