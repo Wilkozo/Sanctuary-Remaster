@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 294a5848517004b419c09dda1efac9cd
+guid: c9be3c9c16bbe554c9662ebec57b6945
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: initialShadingGroup
-    second: {fileID: 2100000, guid: 96ef47466542be042a6f196e904a2f61, type: 2}
+      name: UrnMat
+    second: {fileID: 2100000, guid: 25f1e42590d5b8642a34cfd034668ab1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

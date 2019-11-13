@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 294a5848517004b419c09dda1efac9cd
+guid: 7679f55975338e04f924b4b05cb0839a
 ModelImporter:
   serializedVersion: 26
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: initialShadingGroup
-    second: {fileID: 2100000, guid: 96ef47466542be042a6f196e904a2f61, type: 2}
+      name: DockRailLongMat
+    second: {fileID: 2100000, guid: 643612bdd3cbf504c81b001f6cee6b3a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
