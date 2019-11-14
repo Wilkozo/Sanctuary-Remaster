@@ -5221,6 +5221,11 @@ PrefabInstance:
       propertyPath: talkPanel
       value: 
       objectReference: {fileID: 2047362008}
+    - target: {fileID: 8898986846244849761, guid: d8fb00016ede7664ba556c006dc1067a,
+        type: 3}
+      propertyPath: bread
+      value: 
+      objectReference: {fileID: 1351231256}
     m_RemovedComponents:
     - {fileID: 1116077932317727293, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
     - {fileID: 1023277441982664483, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}

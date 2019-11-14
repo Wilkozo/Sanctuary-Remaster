@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using QuestSystem;
 
 public class Artist : MonoBehaviour
 {
     [SerializeField] ArtistDialogue dialogue;
 
-
+    public GameObject bread;
     public GameObject talkButton;
     public GameObject sprite;
     public bool inRange;
