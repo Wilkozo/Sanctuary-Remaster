@@ -164,4 +164,27 @@ public class breakUp : MonoBehaviour
         }
     }
 
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = true;
+            if (playerSpriteIsActive && GlobalData.talkedToBreakUp == false)
+            {
+                talkButton.SetActive(true);
+            }
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = false;
+            talkButton.SetActive(false);
+            talkPanel.SetActive(false);
+        }
+    }
+
 }
