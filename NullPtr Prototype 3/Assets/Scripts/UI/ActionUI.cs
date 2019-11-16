@@ -16,7 +16,9 @@ public class ActionUI : MonoBehaviour
     {
 
         DontDestroyOnLoad(this.gameObject);
-
+        if (GlobalData.Day == 2) {
+            GlobalData.GetSetCurrentActions = 6;
+        }
         ap = GameObject.FindGameObjectsWithTag("AP");
 
         Debug.Log(GlobalData.GetSetCurrentActions);

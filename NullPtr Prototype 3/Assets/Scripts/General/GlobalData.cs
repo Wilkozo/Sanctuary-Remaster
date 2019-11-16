@@ -9,7 +9,7 @@ public static class GlobalData
     private static float startPosition = -3.48f;
     private static string lastScene = "HomeExt";
     private static bool dreamDefeated = false;
-    private static int dayCount;
+    private static int dayCount = 0;
     private static int currentNumOfActions;
     private static int baseNumOfActions = 6; // Prevents setting to another value
     private static bool isTired;

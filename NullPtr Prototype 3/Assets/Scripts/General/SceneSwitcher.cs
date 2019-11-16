@@ -66,6 +66,9 @@ public class SceneSwitcher : MonoBehaviour {
         //to more text or it will load the next scene too quickly
         if(GlobalData.GetSetCurrentActions <= 0 && GlobalData.InMessage == false)
         {
+            if (GlobalData.Day == 0) {
+                GlobalData.Day = 1;
+            }
             if(GlobalData.GetSetTired == false)
             {
                 GlobalData.GetSetCurrentActions = GlobalData.InAction - 1;
