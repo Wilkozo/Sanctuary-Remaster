@@ -17,6 +17,7 @@ public class ActionUI : MonoBehaviour
     void Start()
     {
 
+
         DontDestroyOnLoad(this.gameObject);
         if (GlobalData.Day == 2 && !hasGainedActions) {
             hasGainedActions = true;
