@@ -36,7 +36,78 @@ public static class NPCArtistStats
     }
 }
 
+
+public static class NPCDrunk
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
+
+public static class NPCFat
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
 public static class NPCPastor
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
+public static class NPCPoor
+{
+    private static int HopeAmount;
+
+    public static int Hope
+    {
+        get
+        {
+            return HopeAmount;
+        }
+        set
+        {
+            HopeAmount = value;
+        }
+    }
+}
+
+
+public static class NPCBreakUp
 {
     private static int HopeAmount;
 

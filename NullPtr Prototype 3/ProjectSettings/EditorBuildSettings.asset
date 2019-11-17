@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/WorldScene.unity
     guid: 88ef48f1c6acdb042b0884f135ce2a64
   - enabled: 0
-    path: Assets/Scenes/HomeExt.unity
+    path: 
     guid: de2349e447e1b574888defa2c8e622c7
   - enabled: 1
     path: Assets/Scenes/Home.unity
@@ -27,9 +27,18 @@ EditorBuildSettings:
     path: Assets/Scenes/School.unity
     guid: 431cdd34f8f062a4ab27af90e9e84c6a
   - enabled: 1
+    path: Assets/Scenes/Church.unity
+    guid: c61701c1649ce754ea263aa7876fc183
+  - enabled: 1
+    path: Assets/Scenes/Arcade.unity
+    guid: b579e42ca67d698478c31650836ae06d
+  - enabled: 1
     path: Assets/Scenes/FightClub.unity
     guid: fc14a3b304fca22408407f563dc94afd
   - enabled: 1
     path: Assets/Scenes/HarrysTestingScenes/TestScene02.unity
     guid: 6d818835b8a495c41809ecba65157db7
+  - enabled: 1
+    path: Assets/Scenes/Store.unity
+    guid: e238bac4e5520a6439f5bc046c954f01
   m_configObjects: {}
