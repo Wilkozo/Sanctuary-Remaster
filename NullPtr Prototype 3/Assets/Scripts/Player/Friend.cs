@@ -71,4 +71,27 @@ public class Friend : MonoBehaviour {
             talkPanel.SetActive(false);
         }
     }
+
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            isInRange = true;
+            if (playerSpriteIsActive)
+            {
+                talkButton.SetActive(true);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            isInRange = false;
+            talkButton.SetActive(false);
+            talkPanel.SetActive(false);
+        }
+    }
 }

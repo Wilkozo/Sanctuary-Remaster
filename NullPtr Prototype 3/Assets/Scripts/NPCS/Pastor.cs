@@ -25,10 +25,7 @@ public class Pastor : MonoBehaviour
     {
         //bobbing
         bobOffset = Random.Range(0.0f, 1.0f);
-        //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
-
-        Debug.Log(NPCPastor.Hope);
 
     }
 
@@ -68,7 +65,7 @@ public class Pastor : MonoBehaviour
     public void agree()
     {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToPastor = true;
 
         switch (NPCPastor.Hope)
@@ -108,7 +105,7 @@ public class Pastor : MonoBehaviour
     public void disagree()
     {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToPastor = true;
 
         switch (NPCPastor.Hope)
@@ -158,6 +155,28 @@ public class Pastor : MonoBehaviour
     }
 
     public void OnTriggerExit(Collider collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = false;
+            talkButton.SetActive(false);
+            talkPanel.SetActive(false);
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            inRange = true;
+            if (playerSpriteIsActive && GlobalData.talkedToPastor == false)
+            {
+                talkButton.SetActive(true);
+            }
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {

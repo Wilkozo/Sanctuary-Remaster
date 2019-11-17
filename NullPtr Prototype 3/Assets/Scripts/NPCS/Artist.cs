@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using QuestSystem;
 
 public class Artist : MonoBehaviour
 {
     [SerializeField] ArtistDialogue dialogue;
 
-
+    public GameObject bread;
     public GameObject talkButton;
     public GameObject sprite;
     public bool inRange;
@@ -27,8 +28,6 @@ public class Artist : MonoBehaviour
         bobOffset = Random.Range(0.0f, 1.0f);
         //NPCArtistStats.Hope = 35;
         talkPanel.SetActive(false);
-
-        Debug.Log(NPCArtistStats.Hope);
 
     }
 
@@ -65,7 +64,7 @@ public class Artist : MonoBehaviour
 
     public void agree() {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToArtist = true;
        
         switch (NPCArtistStats.Hope) {
@@ -103,7 +102,7 @@ public class Artist : MonoBehaviour
 
     public void disagree() {
 
-        GlobalData.TimeOfDay += 1;
+        GlobalData.GetSetCurrentActions -= 1;
         GlobalData.talkedToArtist = true;
 
         switch (NPCArtistStats.Hope)

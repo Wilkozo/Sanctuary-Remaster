@@ -14,6 +14,8 @@ TagManager:
   - DOWN
   - Mirror
   - CullBuilding
+  - AP
+  - ActionUI
   layers:
   - Default
   - TransparentFX
