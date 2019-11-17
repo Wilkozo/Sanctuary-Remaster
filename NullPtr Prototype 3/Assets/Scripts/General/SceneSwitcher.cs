@@ -97,7 +97,12 @@ public class SceneSwitcher : MonoBehaviour {
 
             SceneManager.LoadScene("Home");
         }
-	}
+
+        if (GlobalData.Day == 3)
+        {
+            SceneManager.LoadScene("endingScene");
+        }
+    }
 
     public void SceneSwitch(string scene)
     {
