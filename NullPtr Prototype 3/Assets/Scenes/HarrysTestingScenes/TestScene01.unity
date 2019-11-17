@@ -23145,6 +23145,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 594204873758864483, guid: ff8f88b711997a14f9fbe053f2753acc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0573e418f7ff454ca2226c282435e63,
+        type: 3}
+    - target: {fileID: 592422912076266591, guid: ff8f88b711997a14f9fbe053f2753acc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0573e418f7ff454ca2226c282435e63,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8f88b711997a14f9fbe053f2753acc, type: 3}
 --- !u!1001 &702849061476913832
@@ -23229,6 +23241,18 @@ PrefabInstance:
       propertyPath: talkPanel
       value: 
       objectReference: {fileID: 2047362008}
+    - target: {fileID: 330976507114982221, guid: 4649d01b13e1f9b4eb01e8f57ee0f172,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9bd3bfb6b7d686f49a824bdc2d3e94a0,
+        type: 3}
+    - target: {fileID: 328870739564217201, guid: 4649d01b13e1f9b4eb01e8f57ee0f172,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9bd3bfb6b7d686f49a824bdc2d3e94a0,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4649d01b13e1f9b4eb01e8f57ee0f172, type: 3}
 --- !u!4 &1131784118252291061 stripped

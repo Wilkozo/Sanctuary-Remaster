@@ -5802,6 +5802,18 @@ PrefabInstance:
       propertyPath: talkPanel
       value: 
       objectReference: {fileID: 1265274591}
+    - target: {fileID: 576145926652262227, guid: 8e35ce52e214393448f5ff80921baf6a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 32fdf23e8fd402f4693fa23aac03b76b,
+        type: 3}
+    - target: {fileID: 574594855969046383, guid: 8e35ce52e214393448f5ff80921baf6a,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 32fdf23e8fd402f4693fa23aac03b76b,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 767927185918997381, guid: 8e35ce52e214393448f5ff80921baf6a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e35ce52e214393448f5ff80921baf6a, type: 3}
@@ -5840,7 +5852,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.3272727, y: 2.3272727}
+    oldSize: {x: 1.8181819, y: 1.8181819}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6325,11 +6337,6 @@ PrefabInstance:
       propertyPath: scriptPiggy
       value: 
       objectReference: {fileID: 267479784}
-    - target: {fileID: 225174846922369902, guid: 3a1258c9b490b3b489f328945cd3cabd,
-        type: 3}
-      propertyPath: m_Alpha
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114064927444656554, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -6359,6 +6366,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 225174846922369902, guid: 3a1258c9b490b3b489f328945cd3cabd,
+        type: 3}
+      propertyPath: m_Alpha
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
@@ -11821,11 +11833,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
-      objectReference: {fileID: 0}
     - target: {fileID: 114457583159015412, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: talkPanel
@@ -11836,14 +11843,19 @@ PrefabInstance:
       propertyPath: hopeThreshold
       value: 50
       objectReference: {fileID: 0}
-    - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 212984984546409356, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
@@ -12921,11 +12933,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.25
-      objectReference: {fileID: 0}
     - target: {fileID: 114457583159015412, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
         type: 3}
       propertyPath: talkPanel
@@ -12935,6 +12942,11 @@ PrefabInstance:
         type: 3}
       propertyPath: hopeThreshold
       value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028457046713066, guid: f04ca678e58b3f745b1fb8c56e6f2a48,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 1710086624988230, guid: f04ca678e58b3f745b1fb8c56e6f2a48, type: 3}
       propertyPath: m_IsActive
