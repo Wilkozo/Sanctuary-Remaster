@@ -556,12 +556,12 @@ PrefabInstance:
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 706.5
+      value: -29
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -46.8
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
@@ -576,7 +576,7 @@ PrefabInstance:
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
@@ -586,7 +586,7 @@ PrefabInstance:
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
@@ -596,12 +596,12 @@ PrefabInstance:
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3992393828329698364, guid: cfd44da35e096674882da8cce9191ec5,
         type: 3}
@@ -7195,6 +7195,11 @@ PrefabInstance:
         type: 3}
       propertyPath: targetScene
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270831656101290, guid: efe8cd1637c987b49aff9c61759a528d,
+        type: 3}
+      propertyPath: curScene
+      value: TestScene01
       objectReference: {fileID: 0}
     - target: {fileID: 4063799091054778, guid: efe8cd1637c987b49aff9c61759a528d, type: 3}
       propertyPath: m_LocalPosition.x

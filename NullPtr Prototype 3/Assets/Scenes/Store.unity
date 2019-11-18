@@ -6102,10 +6102,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 122570088}
     m_Modifications:
-    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 224721489060729942, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6230,6 +6226,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PauseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 225174846922369902, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
@@ -12567,7 +12567,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a0f3103a5df09b2409cd4dc82ae68454, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 069fd2f79d79ecd449b155dedd89f3ce, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
@@ -13040,6 +13040,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
+        type: 3}
+      propertyPath: targetObject
+      value: 
+      objectReference: {fileID: 1170500088}
+    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
+        type: 3}
+      propertyPath: scriptPiggy
+      value: 
+      objectReference: {fileID: 267479784}
+    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
+        type: 3}
+      propertyPath: entryDoor
+      value: 
+      objectReference: {fileID: 1682656443}
     - target: {fileID: 4254831292096140, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -13077,21 +13092,6 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
-        type: 3}
-      propertyPath: targetObject
-      value: 
-      objectReference: {fileID: 1170500088}
-    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
-        type: 3}
-      propertyPath: scriptPiggy
-      value: 
-      objectReference: {fileID: 267479784}
-    - target: {fileID: 114813056582150662, guid: f514e0a34673d844ea7c3f0f186c1244,
-        type: 3}
-      propertyPath: entryDoor
-      value: 
-      objectReference: {fileID: 1682656443}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f514e0a34673d844ea7c3f0f186c1244, type: 3}
 --- !u!1 &1672648008
