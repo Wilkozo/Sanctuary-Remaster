@@ -13,6 +13,8 @@ public class MainMenu : MonoBehaviour
 	// Use this for initialization
 	void Start ()
     {
+        GlobalData.GetSetCurrentActions = 6;
+        GlobalData.Day = 1;
         showCredits = false;
 	}
 	
