@@ -72,30 +72,39 @@ public class Fat : MonoBehaviour
         {
             case 10:
                 NPCFat.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCFat.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCFat.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCFat.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCFat.Hope -= 30;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCFat.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 70:
                 NPCFat.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCFat.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 0:
                 NPCFat.Hope += 20;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -112,30 +121,39 @@ public class Fat : MonoBehaviour
         {
             case 10:
                 NPCFat.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCFat.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCFat.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCFat.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCFat.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCFat.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCFat.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCFat.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCFat.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 

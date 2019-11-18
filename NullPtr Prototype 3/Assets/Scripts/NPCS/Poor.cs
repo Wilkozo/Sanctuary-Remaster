@@ -72,30 +72,39 @@ public class Poor : MonoBehaviour
         {
             case 10:
                 NPCPoor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCPoor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCPoor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCPoor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCPoor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCPoor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCPoor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCPoor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCPoor.Hope += 20;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -112,30 +121,39 @@ public class Poor : MonoBehaviour
         {
             case 10:
                 NPCPoor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCPoor.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCPoor.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCPoor.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCPoor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCPoor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 70:
                 NPCPoor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCPoor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 0:
                 NPCPoor.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 

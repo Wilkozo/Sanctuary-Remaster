@@ -72,30 +72,39 @@ public class Pastor : MonoBehaviour
         {
             case 10:
                 NPCPastor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCPastor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCPastor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCPastor.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCPastor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCPastor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCPastor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCPastor.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 0:
                 NPCPastor.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -112,30 +121,39 @@ public class Pastor : MonoBehaviour
         {
             case 10:
                 NPCPastor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCPastor.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCPastor.Hope += 30;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCPastor.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCPastor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCPastor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 70:
                 NPCPastor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCPastor.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCPastor.Hope += 20;
+                PlayerStats.Hope += 5;
                 break;
         }
 

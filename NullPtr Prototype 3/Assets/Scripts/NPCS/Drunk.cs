@@ -72,30 +72,39 @@ public class Drunk : MonoBehaviour
         {
             case 10:
                 NPCDrunk.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCDrunk.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCDrunk.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCDrunk.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCDrunk.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCDrunk.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCDrunk.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCDrunk.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 0:
                 NPCDrunk.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -112,30 +121,38 @@ public class Drunk : MonoBehaviour
         {
             case 10:
                 NPCDrunk.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCDrunk.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCDrunk.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCDrunk.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCDrunk.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCDrunk.Hope += 10;
                 break;
             case 70:
                 NPCDrunk.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCDrunk.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCDrunk.Hope += 20;
+                PlayerStats.Hope += 5;
                 break;
         }
 

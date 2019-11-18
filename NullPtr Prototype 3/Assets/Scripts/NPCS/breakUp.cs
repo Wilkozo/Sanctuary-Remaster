@@ -72,30 +72,38 @@ public class breakUp : MonoBehaviour
         {
             case 10:
                 NPCBreakUp.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCBreakUp.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCBreakUp.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCBreakUp.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCBreakUp.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCBreakUp.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 70:
                 NPCBreakUp.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCBreakUp.Hope -= 40;
                 break;
             case 0:
                 NPCBreakUp.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -112,30 +120,39 @@ public class breakUp : MonoBehaviour
         {
             case 10:
                 NPCBreakUp.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCBreakUp.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCBreakUp.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCBreakUp.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCBreakUp.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCBreakUp.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCBreakUp.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCBreakUp.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCBreakUp.Hope += 20;
+                PlayerStats.Hope += 5;
                 break;
         }
 

@@ -147,7 +147,7 @@ public class PlayerMove : MonoBehaviour {
             }
             else
             {
-                FindObjectOfType<MessageBox>().DisplayMessage("Persistance is the key to victory", 5);
+                FindObjectOfType<MessageBox>().DisplayMessage("Day: " + GlobalData.Day, 5);
             }
         }
 

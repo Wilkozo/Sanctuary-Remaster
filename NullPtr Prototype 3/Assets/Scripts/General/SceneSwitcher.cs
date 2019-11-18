@@ -95,7 +95,7 @@ public class SceneSwitcher : MonoBehaviour {
 
             }
 
-            SceneManager.LoadScene("Home");
+            SceneManager.LoadScene("FightClub");
         }
 
         if (GlobalData.Day == 9)

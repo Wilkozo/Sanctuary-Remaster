@@ -70,30 +70,39 @@ public class Artist : MonoBehaviour
         switch (NPCArtistStats.Hope) {
             case 10:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 20:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 30:
                 NPCArtistStats.Hope += 40;
+                PlayerStats.Hope += 5;
                 break;
             case 40:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 50:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 60:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 70:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 80:
                 NPCArtistStats.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 0:
                 NPCArtistStats.Hope += 70;
+                PlayerStats.Hope += 5;
                 break;
         }
 
@@ -109,30 +118,39 @@ public class Artist : MonoBehaviour
         {
             case 10:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 20:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 30:
                 NPCArtistStats.Hope -= 40;
+                PlayerStats.Hope -= 5;
                 break;
             case 40:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 50:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 60:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 70:
                 NPCArtistStats.Hope -= 10;
+                PlayerStats.Hope -= 5;
                 break;
             case 80:
                 NPCArtistStats.Hope += 10;
+                PlayerStats.Hope += 5;
                 break;
             case 0:
                 NPCArtistStats.Hope -= 50;
+                PlayerStats.Hope -= 5;
                 break;
         }
 
