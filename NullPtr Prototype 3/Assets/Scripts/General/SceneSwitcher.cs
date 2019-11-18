@@ -98,7 +98,7 @@ public class SceneSwitcher : MonoBehaviour {
             SceneManager.LoadScene("FightClub");
         }
 
-        if (GlobalData.Day == 9)
+        if (GlobalData.Day == 8)
         {
             SceneManager.LoadScene("endingScene");
         }
