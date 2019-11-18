@@ -63,7 +63,7 @@ public class Desk : MonoBehaviour {
     {
         //isSitting = false;
         questionBox.SetActive(false);
-
+        GlobalData.GetSetCurrentActions -= 1;
         leaveButton.SetActive(false);
         ptarget.isActive = true;
         
