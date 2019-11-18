@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class PlayerColision : MonoBehaviour
+using QuestSystem;
+public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    QuestManager questManager;
+    private void Start()
     {
-        
+        questManager = FindObjectOfType<QuestManager>();
     }
     private void OnCollisionEnter(Collision collision)
     {
