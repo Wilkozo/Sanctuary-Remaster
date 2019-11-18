@@ -5,11 +5,12 @@ using QuestSystem;
 //Holds all the quest done and current quests
 public static class QuestHolder
 {
-    public static List<Quest> CurrentQuests;
-    public static List<Quest> DoneQuests;
+    public static List<Quest> CurrentQuests = new List<Quest>();
+    public static List<Quest> DoneQuests = new List<Quest>();
 
     public static void AddQuestToCurrent(Quest newQuest)
     {
+        if(isQuestAlreadyGiven(newQuest.questIdentifier._questID))
         CurrentQuests.Add(newQuest);
     }
     public static void AddQuestToDone(Quest newQuest)
