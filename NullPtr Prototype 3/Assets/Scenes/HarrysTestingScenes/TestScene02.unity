@@ -2523,17 +2523,17 @@ PrefabInstance:
       propertyPath: talkPanel
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1126371581633885459, guid: d8fb00016ede7664ba556c006dc1067a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 959661783472636763, guid: d8fb00016ede7664ba556c006dc1067a,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c4781f2cdb72b55489ec4d25704ceadb,
         type: 3}
-    - target: {fileID: 1126371581633885459, guid: d8fb00016ede7664ba556c006dc1067a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1116077932317727293, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d8fb00016ede7664ba556c006dc1067a, type: 3}
@@ -4468,13 +4468,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2010519689, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1097172970287200, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1712665666435334, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1706378741, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
       propertyPath: m_IsActive
@@ -4485,15 +4485,19 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1456174104800752, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1722206421552454, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1258578618470418, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1456174104800752, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1712665666435334, guid: 40a642b65f303314eb376e3c01f863eb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -8016,6 +8020,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
+      propertyPath: m_Name
+      value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114478853737757620, guid: 3a1258c9b490b3b489f328945cd3cabd,
+        type: 3}
+      propertyPath: scriptPiggy
+      value: 
+      objectReference: {fileID: 320537563}
     - target: {fileID: 224721489060729942, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8121,11 +8138,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 114478853737757620, guid: 3a1258c9b490b3b489f328945cd3cabd,
-        type: 3}
-      propertyPath: scriptPiggy
-      value: 
-      objectReference: {fileID: 320537563}
     - target: {fileID: 114064927444656554, guid: 3a1258c9b490b3b489f328945cd3cabd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8151,14 +8163,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EnterMainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
-      propertyPath: m_Name
-      value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 1412183614307878, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a1258c9b490b3b489f328945cd3cabd, type: 3}
