@@ -49,6 +49,10 @@ namespace QuestSystem
             {
                 return description;
             }
+            set
+            {
+                description = value;
+            }
         }
 
         public int CurrentAmount
