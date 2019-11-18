@@ -29,10 +29,12 @@ namespace QuestSystem
             for (int i = 0; i < questGoals.Count; i++)
             {
                 questGoals[i].UpdateProgress();
-                if (questGoals[i].IsComplete && questGoals[i].IsSecondary == false)
+                if (questGoals[i].IsComplete == false && questGoals[i].IsSecondary == false)
                 {
                     return false;
                 }
+                questGoals[i].Description = questGoals[i].Description + " Done!";
+
             }
             return true; // Quest Completed
         }
