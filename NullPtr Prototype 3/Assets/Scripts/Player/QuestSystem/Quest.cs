@@ -29,7 +29,7 @@ namespace QuestSystem
             for (int i = 0; i < questGoals.Count; i++)
             {
                 questGoals[i].UpdateProgress();
-                if (questGoals[i].IsComplete == false)
+                if (questGoals[i].IsComplete == false && questGoals[i].IsSecondary == false)
                 {
                     return false;
                 }
@@ -45,15 +45,15 @@ namespace QuestSystem
                 questGoals[i].CheckProgress(item);
             }
         }
-        //public string GetString()
-        //{
-        //    string temp = "";
-        //    for (int i = 0; i < questGoals.Count; i++)
-        //    {
-        //        temp += questGoals[i].Title + "/n" + questGoals[i].Description + "/n" + questGoals[i].ToString() + "/n";
-        //    }
-        //    return temp;
-        //}
+        public string GetString()
+        {
+            string temp = "";
+            for (int i = 0; i < questGoals.Count; i++)
+            {
+                temp += questGoals[i].Title + "/n" + questGoals[i].Description + "/n" + questGoals[i].ToString() + "/n";
+            }
+            return temp;
+        }
         public string GetTitle()
         {
             string Title = "";

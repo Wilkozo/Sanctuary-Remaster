@@ -16,7 +16,6 @@ TagManager:
   - CullBuilding
   - AP
   - ActionUI
-  - Bread
   layers:
   - Default
   - TransparentFX
@@ -30,7 +29,7 @@ TagManager:
   - 
   - DialCheck
   - Selection
-  - Bread
+  - 
   - 
   - 
   - 

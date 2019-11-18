@@ -13,7 +13,6 @@ public class QuestDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
         showQuests = false;
         openQuestWindow = false;
         canvasGroup = GetComponent<CanvasGroup>();
@@ -30,11 +29,11 @@ public class QuestDisplay : MonoBehaviour
         {
             Close();
         }
-        //string bigString;
-        //foreach (Quest it in QuestHolder.CurrentQuests)
-        //{
-        //    bigString = it.GetString();
-        //}
+        string bigString;
+        foreach (Quest it in QuestHolder.CurrentQuests)
+        {
+            bigString = it.GetString();
+        }
     }
     public void Switch()
     {

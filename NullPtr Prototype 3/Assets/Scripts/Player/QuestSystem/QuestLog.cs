@@ -14,8 +14,6 @@ public class QuestLog : MonoBehaviour
     private Quest selected;
     [SerializeField]
     private Text textDescription;
-    [SerializeField] GameObject Prefab;
-
 
     public static QuestLog MyInstance
     {
@@ -31,18 +29,14 @@ public class QuestLog : MonoBehaviour
     }
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
-        if(!QuestHolder.isQuestAlreadyGiven(1) || QuestHolder.isQuestAlreadyFinished(1))
-        {
-            Quest newQuest = new Quest(new QuestIdentifier(1), new CollectionObjective("Collect the Bread", 5, "Collect", Prefab, "Get the bread around the town", false));
-            QuestHolder.AddQuestToCurrent(newQuest);
-            QuestLog.MyInstance.AddQuest(newQuest);
-        }
+        Quest newQuest = new Quest(new QuestIdentifier(1), new CollectionObjective("Collect the Bread", 10, "Collect", this.gameObject, "The Baker need help with his lost bread", false));
+        QuestHolder.AddQuestToCurrent(newQuest);
+        QuestLog.MyInstance.AddQuest(newQuest);
         foreach (Quest it in QuestHolder.CurrentQuests)
         {
             GameObject Temp = Instantiate(questPrefab, questList);
             QuestUI qs = Temp.GetComponent<QuestUI>();
-            qs.quest = it;
+            qs.quest = QuestHolder.CurrentQuests[QuestHolder.CurrentQuests.Count];
             qs.quest.questUI = qs;
 
             Temp.GetComponent<Text>().text = it.GetTitle(); // Makes the newQuest of the last quest within the list.

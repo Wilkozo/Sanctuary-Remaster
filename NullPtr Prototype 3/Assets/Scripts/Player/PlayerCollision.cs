@@ -9,16 +9,12 @@ public class PlayerCollision : MonoBehaviour
     {
         questManager = FindObjectOfType<QuestManager>();
     }
-    private void OnTriggerEnter(Collider collider)
+    private void OnCollisionEnter(Collision collision)
     {
-        questManager.CollectionCheck(collider.gameObject);
-        if(collider.tag == "Bread")
-        {
-            Destroy(collider.gameObject);
-        }
+        questManager.CollectionCheck(collision.gameObject);
     }
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        questManager.CollectionCheck(collider.gameObject);
+        questManager.CollectionCheck(collision.gameObject);
     }
 }
