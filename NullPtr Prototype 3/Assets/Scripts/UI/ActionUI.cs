@@ -9,9 +9,6 @@ public class ActionUI : MonoBehaviour
     public List<GameObject> actionPoints;
     public GameObject[] ap;
 
-    bool hasGainedActions;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +16,8 @@ public class ActionUI : MonoBehaviour
 
 
         DontDestroyOnLoad(this.gameObject);
-        if (GlobalData.Day == 2 && !hasGainedActions) {
-            hasGainedActions = true;
+        if (GlobalData.Day == 2 && !GlobalData.tempFix) {
+            GlobalData.tempFix = true;
             GlobalData.GetSetCurrentActions = 6;
         }
         ap = GameObject.FindGameObjectsWithTag("AP");

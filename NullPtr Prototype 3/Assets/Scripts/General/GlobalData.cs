@@ -22,6 +22,19 @@ public static class GlobalData
     private static bool TalkedToDrunk = false;
     private static bool TalkedToFat = false;
     private static bool TalkedToPoor = false;
+    private static bool day1TempFix = false;
+
+    public static bool tempFix
+    {
+        get
+        {
+            return day1TempFix;
+        }
+        set
+        {
+            day1TempFix = value;
+        }
+    }
 
     public static int InAction
     {
