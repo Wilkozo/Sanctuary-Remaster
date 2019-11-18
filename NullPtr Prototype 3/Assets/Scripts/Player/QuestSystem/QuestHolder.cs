@@ -10,7 +10,7 @@ public static class QuestHolder
 
     public static void AddQuestToCurrent(Quest newQuest)
     {
-        if(isQuestAlreadyGiven(newQuest.questIdentifier._questID))
+        //if(isQuestAlreadyGiven(newQuest.questIdentifier._questID))
         CurrentQuests.Add(newQuest);
     }
     public static void AddQuestToDone(Quest newQuest)
@@ -34,14 +34,27 @@ public static class QuestHolder
                 return true;
             }
         }
+        //foreach (Quest it in DoneQuests)
+        //{
+        //    if(ID == it.questIdentifier._questID)
+        //    {
+        //        return true;
+        //    }
+        //}
+        return false;
+    }
+    public static bool isQuestAlreadyFinished(int ID)
+    {
         foreach (Quest it in DoneQuests)
         {
-            if(ID == it.questIdentifier._questID)
+            if (ID == it.questIdentifier._questID)
             {
                 return true;
             }
         }
         return false;
     }
-    // Update is called once per frame
+
 }
+
+

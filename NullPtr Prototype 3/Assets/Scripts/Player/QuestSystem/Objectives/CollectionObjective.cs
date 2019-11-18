@@ -97,7 +97,16 @@ namespace QuestSystem
 
         public void CheckProgress(GameObject item)
         {
-            if(item = itemToCollect)
+            if(item.tag == "Bread")
+            {
+                currentAmount++;
+            }
+            UpdateProgress();
+            if(isComplete == true)
+            {
+          
+            }
+            if(item == itemToCollect)
             {
                 currentAmount++;
             }

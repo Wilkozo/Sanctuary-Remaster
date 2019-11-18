@@ -31,13 +31,17 @@ public class QuestManager : MonoBehaviour
 
     void Reward(int ID)
     {
+        Debug.Log(PlayerStats.Hope);
         switch(ID)
         {
             case 1:
                 {
-                    // Put reward for quest here.
+                    PlayerStats.Hope += 5;
                     break;
                 }
         }
+        Debug.Log("Rewarded");
+        Debug.Log(PlayerStats.Hope);
+
     }
 }
